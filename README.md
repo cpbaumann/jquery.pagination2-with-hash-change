@@ -8,7 +8,7 @@
 
 ## Demo
 
-[Demo jquery-plugins: jquery.pagination2-with-hash-change/](http://spielwiese.datenschubse.de/jquery-plugins/jquery.pagination-with-hash-change-2/)
+[Demo jquery-plugins: jquery.pagination2-with-hash-change/](http://spielwiese.datenschubse.de/jquery-plugins/jquery-pagination-with-hash-change-2)
 
 ## Usage
 
