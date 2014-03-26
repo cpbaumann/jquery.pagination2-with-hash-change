@@ -1,8 +1,4 @@
-a { text-decoration: none; }
-
-html{
-  height: 100%;
-}
+html{ height: 100%; }
 
 body{
   font-size: 75%;
@@ -41,17 +37,14 @@ footer{
   background-color: #eee;
 }
 
-h1{
-  color: #333;
-  font-size: 1.5em;
-}
+h1{ color: #333;  font-size: 1.5em; }
+h2{ border-bottom: 1px solid #ccc;  font-size: 1.4em; }
+h3{ font-size: 1.2em; }
 
-a,
-a:link,
-a:visited,
-a:focus,
-a:hover{
+a, a:link, a:visited, a:focus, a:hover{
   color: #D94736;
+  text-decoration: none;
+  outline: none;
 }
 
 #container{
@@ -59,7 +52,7 @@ a:hover{
   height: 100%;
 }
 
-ul#gallery{
+#gallery{
   list-style: none;
   margin:0 0 2em 0;
   padding:0;
@@ -77,8 +70,7 @@ ul#gallery{
   font-size: 22px;
 }
 
-.paging-nav ol,   
-.paging-nav ul{
+.paging-nav ol, .paging-nav ul{
   overflow: hidden;
   list-style: none;
   margin: 2em 0 1em 0;
@@ -103,20 +95,16 @@ ul#gallery{
   text-decoration: none;
 }
 
-.paging-nav a:focus{ 
-  outline: none; 
-}
-
 .paging-nav .active a{
   border-color: red;
   color: #f00;
 }
 
 code {
-  white-space: pre; /* CSS2 */
-  white-space: pre-wrap; /* CSS 2.1 */
-  white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
-  word-wrap: break-word; /* IE */
+  white-space: pre; 
+  white-space: pre-wrap; 
+  white-space: pre-line; 
+  word-wrap: break-word; 
   font-family: Courier, MonoSpace;
   margin: 0;
   padding: 0 1em 1em 1em;
@@ -144,20 +132,6 @@ pre{
   border-radius: 2px;
   font-size: 0.8em;
 }
-
-h1{
-  font-size: 1.6em;  
-}
-
-h2{
-  border-bottom: 1px solid #ccc;
-  font-size: 1.4em;
-}
-
-h3{
-  font-size: 1.2em;
-}
-
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
