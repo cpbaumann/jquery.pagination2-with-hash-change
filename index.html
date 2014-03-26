@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Demo Pagination Version 2 with hash change </title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1>Pagination Version 2 with hash change jQuery Plugin</h1>
+        <ul>
+          <li>Adds Pagination with hash change</li>
+          <li>Next and Prev Button </li>
+          <li>Display a Pagenumber</li>
+        </ul>
+        <p>
+          <a href="https://github.com/cpbaumann/jquery.pagination-with-hash-change-2">on github</a></p>
+      </header>
+      <div id="content">
+        <div id="container">
+          <h2>Demo</h2>
+          <button class="prev">prev</button>
+          <button class="next">next</button>
+          <span>Page: <span class="counter"> </span></span>
+          <span class="paging-nav"></span>
+          <ul id="gallery" class="clearfix">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+          </ul>
+          <button class="prev">prev</button>
+          <button class="next">next</button>
+          <span class="paging-nav"></span>
+
+<h2>Usage as in this Example</h2>
+<p>Feel free to use CSS Ids ,-)</p>
+<h3>HTML</h3>
+<pre>
+<code>
+&lt;button class="prev"&gt;prev&lt;/button&gt;
+&lt;button class="next"&gt;next&lt;/button&gt;
+&lt;span&gt;Page: &lt;span class="counter"&gt; &lt;/span>&lt;/span&gt;
+&lt;div class="paging-nav">&lt;/div&gt;
+&lt;ul id="gallery" class="clearfix"&gt;
+&nbsp;&nbsp;  &lt;li&gt;1&lt;/li&gt;
+&nbsp;&nbsp;  &lt;li&gt;2&lt;/li&gt;
+&nbsp;&nbsp;  &lt;li&gt;3&lt;/li&gt;
+&nbsp;&nbsp;  &lt;li&gt;4&lt;/li&gt;
+
+
+&nbsp;&nbsp;  &lt;li&gt;30&lt;/li&gt;
+&lt;/ul&gt;
+&lt;button class="prev"&gt;prev&lt;/button&gt;
+&lt;button class="next"&gt;next&lt;/button&gt;
+&lt;div class="paging-nav">&lt;/div&gt;
+</code>
+</pre>
+
+<h3>jQuery</h3>
+<p>Use the plugin as follows:</p>
+<pre>
+<code>
+$('#gallery').Paginationwithhashchange2({
+&nbsp;&nbsp;  nextSelector: '.next',
+&nbsp;&nbsp;  prevSelector: '.prev',
+&nbsp;&nbsp;  counterSelector: '.counter',
+&nbsp;&nbsp;  pagingSelector: '.paging-nav',
+&nbsp;&nbsp;  itemsPerPage: 5,
+&nbsp;&nbsp;  initValue: 3
+});
+</code>
+</pre>
+
+<h3>HTML/CSS</h3>
+
+<p>The generated HTML source in <span class="code">&lt;div class="paging-nav" &gt; &lt;/div&gt;</span>: 
+
+
+<pre>
+<code>
+&lt;ul&gt;
+&nbsp;&nbsp;  &lt;li class="active"&gt;&lt;a href="#1"&gt;1&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp;  &lt;li&gt;&lt;a href="#2"&gt;2&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp;  &lt;li&gt;&lt;a href="#3"&gt;3&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp;  &lt;li&gt;&lt;a href="#4"&gt;4&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp;  &lt;li&gt;&lt;a href="#5"&gt;5&lt;/a&gt;&lt;/li&gt;
+
+&nbsp;&nbsp;  &lt;li&gt;&lt;a href="#30"&gt;30&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code>
+</pre>
+
+<h2>Notes</h2>
+<ul>
+  <li>Requires jQuery 1.9+.
+<li>the # hash of a linked URI is used
+<li>tested in IE8, IE 9, IE 10, IE 11, Safarie, Firefox, Chrome
+</ul>
+<h2>License</h2>
+<p>This plugin is dual licensed under the MIT and GPL licenses.</p> 
+
+
+        </div> <!--! end of #container -->
+      </div>
+    <footer>
+
+    </footer>
+  </div>
+  <script src="js/libs/jquery-1.11.0.min.js"></script>
+  <script src="js/jquery.pagination-with-hash-change-2.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#gallery').Paginationwithhashchange2({
+        nextSelector: '.next',
+        prevSelector: '.prev',
+        counterSelector: '.counter',
+        pagingSelector: '.paging-nav',
+        itemsPerPage: 4,
+        initialPage: 3
+      });
+    });
+  </script>
+  </body>
+</html>
