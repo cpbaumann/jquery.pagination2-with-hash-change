@@ -1,6 +1,10 @@
-# Pagination with hash change jQuery Plugin
+# Pagination Version 2 with hash change jQuery Plugin
 
-Adds Pagination with hash change
+* Adds Pagination with hash change
+* Next and Prev Button 
+* Display a Pagenumber
+
+
 
 ## Demo
 
