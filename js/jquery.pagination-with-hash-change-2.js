@@ -1,11 +1,6 @@
 /*
-*
 *  by cpbaumann
-*
-*
 */
-
-
 
 (function ( $, window, document, undefined ) {
 
@@ -150,7 +145,6 @@
             }
         }
 
-
         function setInitalPage () {
 
             var h = Hash.get();
@@ -199,9 +193,7 @@
         next.on('click', plus);
         prev.on('click', minus);
         $(pagingSelector).on('click', 'a', pageevent);
-        //$(window).bind( 'hashchange', pageevent);
     };
-
 
     $.fn[pluginName] = function ( options ) {
         return this.each(function () {
@@ -212,9 +204,4 @@
         });
     };
 
-
 })( jQuery, window, document );
-
-
-
-
